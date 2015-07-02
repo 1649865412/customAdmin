@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom-dev" basedir="." default="copy-to-customFront">
+
+	<target name="copy-to-customFront">
+		<property file="../conf/dev.properties" />
+		<ant antfile="../scripts/webapps-sync.xml" target="copy-to-customFront"/>
+		
+	</target>
+</project>
